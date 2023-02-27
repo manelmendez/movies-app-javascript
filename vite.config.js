@@ -4,9 +4,9 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   server: {
-    port: 5555,
+    port: 5000,
   },
   preview: {
-    port: 5556
+    port: 5001
   }
 })
