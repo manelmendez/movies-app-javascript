@@ -7,6 +7,12 @@ export default defineConfig({
     port: 5000,
   },
   preview: {
-    port: 5001
+    host: true,
+    port: 5001,
+    hmr: {
+      host: 'localhost',
+      protocol: 'wss',
+      clientPort: 443
+    }
   }
 })
