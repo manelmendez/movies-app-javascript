@@ -1,6 +1,7 @@
-let movieNameRef= document.getElementById("movie-name")
+import { key } from './key'
+let movieNameRef = document.getElementById("movie-name")
 let searchBtn = document.getElementById("search-btn")
-let result =  document.getElementById("result")
+let result = document.getElementById("result")
 
 let getMovie = () => {
   let movieName = movieNameRef.value
@@ -40,9 +41,9 @@ let getMovie = () => {
         result.innerHTML = `<h3 class="msg">${data.Error}</h3>`
       }
     })
-    .catch(() => {
-      result.innerHTML = `<h3 class="msg">Error Occurred</h3>`
-    })
+      .catch(() => {
+        result.innerHTML = `<h3 class="msg">Error Occurred</h3>`
+      })
   }
 }
 

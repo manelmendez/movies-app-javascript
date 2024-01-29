@@ -1,1 +1,1 @@
-key = "6e08cd71"
+export const key = "6e08cd71"
