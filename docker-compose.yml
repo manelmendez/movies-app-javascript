@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  movies-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: "movies-app"
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./dist:/var/www/html
+    networks:
+      - matchanalyzer_ma_backend
+networks:
+  matchanalyzer_ma_backend:
+    external: true
