@@ -1,1 +1,3 @@
-key = "6e08cd71"
+export default {
+  key: "6e08cd71"
+}

@@ -1,10 +1,11 @@
 let movieNameRef= document.getElementById("movie-name")
 let searchBtn = document.getElementById("search-btn")
 let result =  document.getElementById("result")
+import key from "./key"
 
 let getMovie = () => {
   let movieName = movieNameRef.value
-  let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`
+  let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key.key}`
   if (movieName.length <= 0) {
     result.innerHTML = `<h3 class="msg">Por favor introduce un título de película</h3>`
   }
